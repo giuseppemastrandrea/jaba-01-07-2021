@@ -19,6 +19,8 @@ var h = prompt("Inserisci un'altezza")
 
 // console.log("Il rettangolo di base " + b + " e altezza " + h + " ha area " + areaRettangolo(b, h))
 console.log(`Il rettangolo di base ${b} e altezza ${h} ha area ${areaRettangolo(b, h)}`)
+// I backtick su Windows -> alt + 96 (dal tastierino)
+// I backtick su Mac     -> alt + 9
 
 // console.log(altezza) // Questa istruzione risulterà in un errore perchè base ha scope locale in areaRettangolo
 
