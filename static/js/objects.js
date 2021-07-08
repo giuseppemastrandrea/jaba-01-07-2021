@@ -143,3 +143,31 @@ console.log(personsSenzaCaio)
 	3- eliminare dall'array "persons" la persona in cui figura l'indirizzo mail inserito dall'utente
 	4- stampare a console il nuovo array persons filtrato
 */
+
+let mail = prompt("Inserisci una mail")
+
+let filtrate = persons.filter(function(el, i, ar){
+	for(let j = 0; j < el.emails.length ; j++){
+		if(el.emails[j] === mail){
+			return false
+		}
+	}
+	return true;
+
+	// Notazione equivalente più compatta 
+	// return el.emails.indexOf(mail) === -1;
+	/*
+		mail è la mail inserita dall'utente
+		el.emails è l'array delle mail presenti in ogni oggetto dell'array persons
+		se "mail" è presente in el.emails 
+			-> el.emails.indexOf(mail) restituirà un valore > -1
+		se "mail" NON è presente in el.emails 
+			-> el.emails.indexOf(mail) restituirà un valore pari a -1
+
+		noi dobbiamo inserire nell'array "filtrate" SOLO le persone per cui vale
+		la seconda condizione: el.emails.indexOf(mail) -> -1
+
+	*/
+})
+
+console.log(filtrate)
