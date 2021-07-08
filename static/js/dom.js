@@ -74,5 +74,9 @@ collegamenti.forEach(function(el, i, ar){
 */
 
 
+let immagine = document.querySelector("#image");
+alert("CIAONE")
+immagine.src = "https://images.pexels.com/photos/6739655/pexels-photo-6739655.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+
 
 
