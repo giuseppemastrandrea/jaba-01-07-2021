@@ -136,4 +136,10 @@ console.log(personsSenzaCaio)
 	- 1 rappresenta quanti oggetti vogliamo eliminare dopo quello con indice 2
 */
 
-
+/*
+	ESERCIZIO:
+	1- partire dall'array "persons" che trovate in questo script
+	2- chiedere in input all'utente una mail
+	3- eliminare dall'array "persons" la persona in cui figura l'indirizzo mail inserito dall'utente
+	4- stampare a console il nuovo array persons filtrato
+*/
