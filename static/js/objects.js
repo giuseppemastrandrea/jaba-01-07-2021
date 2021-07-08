@@ -109,4 +109,31 @@ persons.forEach(function(el, i, ar){
 	console.log("\n")
 })
 
+/* Cancellare un elemento da una certa posizione in un array */
+
+/* es. vogliamo cancellare tutti gli utenti il cui cognome è "caio" dall'array persons*/
+
+/* 2 modi:
+- usare filter per sovrascrivere l'array persons (oppure per memorizzare tutto in un altro array)
+*/
+
+let personsSenzaCaio = persons.filter(function(el, i, ar){
+	/*
+	if(el.lastName.toLowerCase() === "caio"){
+		return false
+	}else return true
+	*/
+	return el.lastName.toLowerCase() !== "caio";
+})
+
+
+console.log(personsSenzaCaio)
+
+/*
+- usare il metodo .splice
+	persons.splice(2, 1): 
+	- in questo caso il 2 è l'indice dell'elemento che vogliamo eliminare
+	- 1 rappresenta quanti oggetti vogliamo eliminare dopo quello con indice 2
+*/
+
 
