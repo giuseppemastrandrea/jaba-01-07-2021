@@ -52,7 +52,16 @@ window.addEventListener('load', function(event){
         fields.forEach(function(el, i, ar){
             if(el.value === ""){
                 console.log(`TROVATO CAMPO VUOTO -> ${el.name}`)
+                let formRow = el.closest('.formRow');
+                let messaggi = formRow.querySelector('.messaggi');
+                // messaggi.innerHTML = "Campo obbligatorio"
+                messaggi.classList.remove("hidden")
                 formValido = false;
+            }else{
+                let formRow = el.closest('.formRow');
+                let messaggi = formRow.querySelector('.messaggi');
+                // messaggi.innerHTML = ""
+                messaggi.classList.add("hidden")
             }
         })
 
@@ -79,8 +88,10 @@ window.addEventListener('load', function(event){
 
 
         if(formValido === false){
-            console.log("Ho trovato degli errori, quindi non invio il form")
+            form.querySelector('.messaggiGlobali').innerHTML = "Correggi gli errori."
             event.preventDefault()
+        }else{
+            form.querySelector('.messaggiGlobali').innerHTML = ""
         }
 
 

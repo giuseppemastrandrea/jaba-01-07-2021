@@ -28,6 +28,16 @@
         border: 1px solid #cccccc;
     }
 
+    .messaggi,
+    .messaggiGlobali{
+        color: red;
+        font-size: 12px;
+    }
+
+    .hidden{
+        display: none
+    }
+
   </style>
 </head>
 <body>
@@ -68,7 +78,9 @@
                   name="firstName"
                   id="firstName"
                   placeholder="Inserisci un nome"/>
-                <div class="messaggi"></div>
+                <div class="messaggi hidden">
+                  Campo obbligatorio
+                </div>
               </div>
 
               <div class="formRow my-4">
@@ -79,7 +91,9 @@
                   name="lastName"
                   id="lastName"
                   placeholder="Inserisci un cognome"/>
-                <div class="messaggi"></div>
+                <div class="messaggi hidden">
+                  Campo obbligatorio
+                </div>
               </div>
 
               <div class="formRow my-4">
@@ -90,7 +104,7 @@
                   name="address"
                   id="address"
                   placeholder="Inserisci un indirizzo"/>
-                <div class="messaggi"></div>
+                <div class="messaggi hidden"></div>
               </div>
 
               <div class="formRow my-4">
@@ -101,7 +115,9 @@
                   name="email"
                   id="email"
                   placeholder="Inserisci un email"/>
-                <div class="messaggi"></div>
+                <div class="messaggi hidden">
+                  Campo obbligatorio
+                </div>
               </div>
 
               <div class="formRow my-4">
@@ -129,6 +145,9 @@
               <div class="formRow">
                 <button type="submit">Invia i dati</button>
               </div>
+
+              <div class="messaggiGlobali"></div>
+
             </form>
           </div>
         </div>
