@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title></title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<style type="text/css">
 		h1{
 			color: green;
@@ -24,14 +25,19 @@
 		}
 
 		img{
-			max-width: 300px;
+			max-width: 300px; /* 001 */
 		}
+
+		.related img{
+			max-width: 100%; /* --> 011 */
+		}
+
 
 	</style>
 </head>
 <body>
 	<h1 id="mainTitle" style="color:pink">Titolo della pagina</h1>
-	<article>
+	<article id="mainArticle">
 		<p class="paragraph">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -64,6 +70,47 @@
 	<div>
 		<img id="image" src="https://images.pexels.com/photos/2817087/pexels-photo-2817087.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
 	</div>
+
+
+	<section id="articoliCorrelati">
+		<div class="container">
+			<div class="row">
+				<div class="col-4">
+					<div class="related">
+						<h4>
+							Articolo correlato #1
+						</h4>
+						<img src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+						<p>
+							Lorem ipsum dolor sit amet.
+						</p>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="related">
+						<h4>
+							Articolo correlato #2
+						</h4>
+						<img src="https://images.pexels.com/photos/5137664/pexels-photo-5137664.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+						<p>
+							Lorem ipsum dolor sit amet.
+						</p>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="related">
+						<h4>
+							Articolo correlato #3
+						</h4>
+						<img src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+						<p>
+							Lorem ipsum dolor sit amet.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<script 
 	type="text/javascript"

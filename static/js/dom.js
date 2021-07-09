@@ -37,6 +37,14 @@ console.log(paragrafi)
 	contenente tutti gli elementi del documento con classe "paragraph"
 */
 
+/*
+Esempi:
+document.querySelector("p") ->  mi restituisce il primo paragrafo che viene trovato nel DOM
+document.querySelector("h1") -> mi restituisce il primo h1 che viene trovato nel DOM
+document.querySelector(".className") -> mi restituisce il primo elemento con classe "className"
+document.querySelector("#testId") -> mi restituisce l'elemento con id "testId"
+*/
+
 for(let i = 0; i < paragrafi.length; i++){
 	/* 
 		background-image -> backgroundImage
@@ -75,8 +83,19 @@ collegamenti.forEach(function(el, i, ar){
 
 
 let immagine = document.querySelector("#image");
-alert("CIAONE")
 immagine.src = "https://images.pexels.com/photos/6739655/pexels-photo-6739655.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
 
+let article = document.querySelector("#mainArticle")
+article.querySelectorAll(".paragraph").forEach(function(el, i, ar){
+	console.log(el)
+})
+
+
+let correlati = document.querySelector("#articoliCorrelati")
+
+let primoRelated = document.querySelector('.related') // primoRelated prenderà il primo elemento con classe related del documento
+
+let container = primoRelated.closest('.container')
+// closest risale il DOM fino a trovare il primo elemento che matcha il selettore passato come argomento
 
 
