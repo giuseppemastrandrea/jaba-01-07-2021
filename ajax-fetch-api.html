@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <a href="https://www.repubblica.it" class="pressMe">
+    Spingi per salutare
+  </a>
+  <div class="saluti">
+  </div>
+
+  <div id="caricaDaRemoto">
+    <!-- Un'API (Application Programming Interface) nell'ambito web è un server
+      che mi restituisce stringhe JSON come risposte, non ci dà le classiche risposte
+      dei server web (html, css, pdf, jpg, ...)
+
+      Chiamare un'API significa fare una richiesta a questi server che ci restituiscono
+      una stringa JSON
+    -->
+    <a href="#" class="remoteLink">
+      Carica un joke random dall'API di Chuck Norris
+    </a>
+
+    <div class="messaggioRemoto"></div>
+  </div>
+  <script src="static/js/ajax-fetch-api.js"></script>
+</body>
+</html>
