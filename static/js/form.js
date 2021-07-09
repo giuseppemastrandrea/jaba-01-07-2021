@@ -65,6 +65,19 @@ window.addEventListener('load', function(event){
             }
         })
 
+
+        let selectedSubscription = form.querySelector('[name=subscription]:checked');
+        /* In questo modo andiamo a prendere il campo con name subscription che è stato checkato
+        * Se selectedSubscription è null vuol dire che non ho selezionato alcun campo -> formValido = false
+        * */
+
+        if(selectedSubscription === null){
+            console.log('Non hai scelto alcun abbonamento')
+            formValido = false;
+        }
+
+
+
         if(formValido === false){
             console.log("Ho trovato degli errori, quindi non invio il form")
             event.preventDefault()

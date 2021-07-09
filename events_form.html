@@ -19,7 +19,7 @@
         padding: 15px 30px
     }
 
-    main .formRow input{
+    main .textInput{
         width: 100%;
     }
 
@@ -101,6 +101,28 @@
                   name="email"
                   id="email"
                   placeholder="Inserisci un email"/>
+                <div class="messaggi"></div>
+              </div>
+
+              <div class="formRow my-4">
+                Scegli una opzione(*):
+                <div>
+                  <label for="year_subscription">Abbonamento annuale:</label>
+                  <input
+                    type="radio"
+                    name="subscription"
+                    id="year_subscription"
+                    value="year" />
+                </div>
+
+                <div>
+                  <label for="month_subscription">Abbonamento mensile:</label>
+                  <input
+                    type="radio"
+                    name="subscription"
+                    id="month_subscription"
+                    value="month"/>
+                </div>
                 <div class="messaggi"></div>
               </div>
 
