@@ -1,0 +1,26 @@
+body{
+    /* Gradiente di sfondo */
+    margin: 0;
+    min-height: 100vh;
+    background: rgb(130,235,167);
+    background: linear-gradient(-45deg, rgba(130,235,167,1) 14%, rgba(94,38,253,1) 42%, rgba(196,181,237,1) 60%, rgba(0,0,0,1) 78%, rgba(135,94,255,1) 100%);
+}
+
+.box{
+    background: #EBFFF4;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+    /* margin-top e bottom a 25px su mobile */
+}
+
+@media (min-width: 768px){
+    .box{
+        border-radius: 10px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 80px;
+        margin-bottom: 95px;
+    }
+}
